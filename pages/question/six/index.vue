@@ -37,8 +37,8 @@ export default {
     myEventHandler(e) {
       this.windowHeight = window.innerHeight;
       this.windowWidth = window.innerWidth;
-      this.sidePaddingBuilder = this.windowWidth  > this.$store.state.setting.maxWidth
-        ? ((this.windowWidth  - this.$store.state.setting.maxWidth) / 2)
+      this.sidePaddingBuilder = this.windowWidth > this.$store.state.setting.maxWidth
+        ? ((this.windowWidth - this.$store.state.setting.maxWidth) / 2)
         : 0;
       this.initialze();
     },
@@ -63,6 +63,23 @@ export default {
       this.assets = uri
     },
     goNext(value) {
+      if (this.$store.state.answer.answer_3 == 1) {
+        // Get.toNamed("/result-trustworthy");
+        this.$router.push("/result/dreamer");
+      } else if (this.$store.state.answer.answer_4 == 0) {
+        // this.$router.push("/result/dreamer");
+        this.$router.push("/result/exclusive");
+      } else if (this.$store.state.answer.answer_5 == 0) {
+        // this.$router.push("/result/exclusive");
+        this.$router.push("/result/trustworthy");
+      } else if (this.$store.state.answer.answer_6 == 0) {
+        this.$router.push("/result/seducer");
+      } else if (this.$store.state.answer.answer_6 == 1) {
+        this.$router.push("/result/selfless");
+      } else {
+        this.$router.push("/");
+      }
+      return
       this.$store.dispatch("answer/answer_6", value);
       this.$router.push('/lead');
     },
