@@ -131,22 +131,23 @@ export default {
         <div v-if="paddingBuilder==0" v-html="spacer(146)"></div>
         <div v-html="spacer(122)"></div>
 
+<!--        TODO:RESOLVE-->
         <center>
           <img
-            src="~/assets/images/lead-page/text-1.png"
+            src="~/assets/images/lead-page/text.png"
             :width="ratio * 877"
             :height="ratio * 174"
           >
         </center>
         <div v-html="spacer(32)"></div>
 
-        <center>
-          <img
-            src="~/assets/images/lead-page/text-2.png"
-            :width="ratio * 891"
-            :height="ratio * 136"
-          >
-        </center>
+<!--        <center>-->
+<!--          <img-->
+<!--            src="~/assets/images/lead-page/text-2.png"-->
+<!--            :width="ratio * 891"-->
+<!--            :height="ratio * 136"-->
+<!--          >-->
+<!--        </center>-->
 
 
         <div v-html="spacer(70)"></div>

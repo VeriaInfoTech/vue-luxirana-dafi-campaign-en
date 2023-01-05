@@ -99,13 +99,14 @@ export default {
         <center>
           <img
             src="~/assets/images/first-page/slogan.png"
-            :width="ratio * 1024"
-            :height="ratio * 345"
+            :width="ratio * 850"
+            :height="ratio * 270"
           >
         </center>
         <div v-html="spacer(146)"></div>
 
         <center>
+<!--          TODO:resolve-->
           <img
             src="~/assets/images/first-page/text.png"
             :width="ratio * 1024"
@@ -135,13 +136,13 @@ export default {
                 :style='`
               margin:0px auto;
                background-size: cover;
-              width: ${ratio * 220}px;
-              height: ${ratio * 220}px;
+              width: ${ratio * 178}px;
+              height: ${ratio * 178}px;
               background-image: url(${require("~/assets/images/first-page/button.png")});
               background-position:bottom;
               position:${sidePaddingBuilder==0?"fixed":"absolute"};
               bottom:${ratio * 59}px;
-              right:${(0.5*(ratio * maxWidth))-(0.5*(ratio * 220))}px;
+              right:${(0.5*(ratio * maxWidth))-(0.5*(ratio * 178))}px;
             `'
               >
               </div>
