@@ -170,7 +170,7 @@ export default {
                        width: ${ratio * 465}px;
                        height: ${ratio * 52}px;
                        position:relative;
-                       right: ${ratio * 100}px;
+                       left: ${ratio * 110}px;
                        color: white !important;
                       `"
               >
@@ -198,8 +198,8 @@ export default {
           <img
             v-else
             src="~/assets/images/lead-page/button.png"
-            :width="ratio * 207"
-            :height="ratio * 85"
+            :width="ratio * 396"
+            :height="ratio * 181"
             @click="pressSubmitLogin"
           >
 
