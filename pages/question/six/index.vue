@@ -79,15 +79,15 @@ export default {
     <center>
       <img
         src="~/assets/images/question-6/question.png"
-        :width="ratio * 531"
-        :height="ratio * 41"
+        :width="ratio * 705"
+        :height="ratio * 56"
       >
     </center>
     <div v-html="spacer(150)"></div>
     <center>
       <img
         src="~/assets/images/question-6/answer-1.png"
-        :width="ratio * 380"
+        :width="ratio * 540"
         :height="ratio * 123"
         @click="goNext(0)"
       >
@@ -96,7 +96,7 @@ export default {
     <center>
       <img
         src="~/assets/images/question-6/answer-2.png"
-        :width="ratio * 424"
+        :width="ratio * 621"
         :height="ratio * 123"
         @click="goNext(1)"
       >
