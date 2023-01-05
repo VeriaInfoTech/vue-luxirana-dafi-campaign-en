@@ -98,7 +98,7 @@ export default {
         <div v-html="spacer(187)"></div>
         <center>
           <img
-            src="~/assets/images/first-page/slogan.png"
+            src="~/assets/images/first-page/slogan.jpg"
             :width="ratio * 850"
             :height="ratio * 270"
           >

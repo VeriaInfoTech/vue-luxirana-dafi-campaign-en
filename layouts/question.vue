@@ -90,7 +90,7 @@ export default {
               margin:0px auto;
               background-size: cover;
               width: ${ratio * maxWidth}px;
-              background-image: url(${require("~/"+assets+"app-bar.png")});
+              background-image: url(${require("~/"+assets+"app-bar.jpg")});
               height: ${ratio * 146}px;
               position:${sidePaddingBuilder==0?"fixed":"relative"};
             `'
@@ -105,7 +105,7 @@ export default {
           :style='`
               margin:0px auto;
               width: ${ratio * maxWidth}px;
-              background-image: url(${require("~/"+assets+"bottom-bar.png")});
+              background-image: url(${require("~/"+assets+"bottom-bar.jpg")});
               background-size:  cover;
               background-position:bottom;
               height: ${ratio * 414}px;

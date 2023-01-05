@@ -75,7 +75,7 @@ export default {
     <div v-html="spacer(51)"></div>
     <center>
       <img
-        src="~/assets/images/result-exclusive/full.png"
+        src="~/assets/images/result-exclusive/full.jpg"
         :width="`${ratio * 919}px;`"
         :height="`${ratio * 1694}px;`"
       >
