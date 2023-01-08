@@ -9,7 +9,7 @@ export default {
   data() {
     return {
       assets: 'assets/images/question-4/',
-      title: 'Campaign',
+      title: 'Question 4',
       sidePaddingBuilder: window.innerWidth > this.$store.state.setting.maxWidth
         ? ((window.innerWidth - this.$store.state.setting.maxWidth) / 2)
         : 0,

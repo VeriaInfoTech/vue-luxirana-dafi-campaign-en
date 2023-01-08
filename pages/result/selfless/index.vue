@@ -13,6 +13,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
+      title:"Devoted",
       sidePaddingBuilder: window.innerWidth > this.$store.state.setting.maxWidth
         ? ((window.innerWidth - this.$store.state.setting.maxWidth) / 2)
         : 0,

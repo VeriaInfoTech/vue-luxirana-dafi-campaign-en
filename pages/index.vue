@@ -1,5 +1,8 @@
 <script>
 export default {
+  head: {
+    title: "Start",
+  },
   name: 'IndexPage',
   data() {
     return {
@@ -24,8 +27,8 @@ export default {
     myEventHandler(e) {
       this.windowHeight = window.innerHeight;
       this.windowWidth = window.innerWidth;
-      this.sidePaddingBuilder = this.windowWidth  > this.$store.state.setting.maxWidth
-        ? ((this.windowWidth  - this.$store.state.setting.maxWidth) / 2)
+      this.sidePaddingBuilder = this.windowWidth > this.$store.state.setting.maxWidth
+        ? ((this.windowWidth - this.$store.state.setting.maxWidth) / 2)
         : 0;
       this.initialze();
     },
@@ -106,7 +109,7 @@ export default {
         <div v-html="spacer(146)"></div>
 
         <center>
-<!--          TODO:resolve-->
+          <!--          TODO:resolve-->
           <img
             src="~/assets/images/first-page/text.png"
             :width="ratio * 1024"
