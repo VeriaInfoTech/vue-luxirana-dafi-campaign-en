@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+<head>
+  {{ HEAD }}
+  <!-- Google tag (gtag.js) -->
+  <script>
+    //<!--
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-74PFB1WRPY', {
+      cookie_flags: 'SameSite=None;Secure'
+    });
+    //-->
+
+  </script>
+
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-NJQWBJZ');
+
+
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+<body {{ BODY_ATTRS }}>
+{{ APP }}
+
+<script>
+  window.addEventListener('load', function (ev) {
+    // Download main.dart.js
+    _flutter.loader.loadEntrypoint({
+      serviceWorker: {
+        serviceWorkerVersion: serviceWorkerVersion,
+      }
+    }).then(function (engineInitializer) {
+      return engineInitializer.initializeEngine();
+    }).then(function (appRunner) {
+      return appRunner.runApp();
+    });
+  });
+</script>
+</body>
+</html>
